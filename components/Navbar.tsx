@@ -3,22 +3,20 @@
 import React, { useState } from 'react';
 import Link from "next/link";
 import Image from 'next/image';
-import { usePathname, useRouter } from "next/navigation";
-import { close, menu } from "../assets";
+import { usePathname} from "next/navigation";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { TfiClose } from "react-icons/tfi";
 
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 
 import { navbarLinks } from "@/constants";
 
 const Navbar = () => {
-  const router = useRouter();
   const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
   const toggleMenu = () => setToggle(!toggle);
@@ -46,12 +44,12 @@ const Navbar = () => {
 
               return (
                   <React.Fragment key={index}>
-                  {index > 0 && <span className="text-light-1"> | </span>}
+                  {index > 0 && <span className="text-yellow-custom"> | </span>}
                   {link.dropdown ? (
                     <Link
                     href={link.route}
                     key={link.label}
-                    className={`gap-4 p-4 ${isActive && "text-yellow-custom"} hover:text-yellow-custom`}
+                    className={`gap-4 p-4 ${isActive && "text-yellow-custom"} hover:text-yellow-custom text-lg`}
                   >
                   <DropdownMenu>  
                       <DropdownMenuTrigger>
@@ -70,7 +68,7 @@ const Navbar = () => {
                     <Link
                       href={link.route}
                       key={link.label}
-                      className={`gap-4 p-4 ${isActive && "text-yellow-custom"} hover:text-yellow-custom`}
+                      className={`gap-4 p-4 ${isActive && "text-yellow-custom"} hover:text-yellow-custom text-lg`}
                     >
                       <p className='text-light-1'>{link.label}</p>
                     </Link>
@@ -81,18 +79,25 @@ const Navbar = () => {
           </div>
 
           <div className="lg:hidden flex flex-1 justify-end items-center">
-            <Image
-              src={toggle ? close : menu}
-              alt="menu"
-              className="w-[28px] h-[28px] object-contain transition-all duration-300 ease-in-out"
-              onClick={() => toggleMenu()}
-            />
+            {toggle ? (
+              <TfiClose
+                className="w-[28px] h-[28px] text-slate-900 cursor-pointer"
+                onClick={() => toggleMenu()}
+                size={30}
+              />
+            ) : (
+              <RxHamburgerMenu
+                className="w-[28px] h-[28px] text-slate-900 cursor-pointer"
+                onClick={() => toggleMenu()}
+                size={30}
+              />
+            )}
           </div>
       </nav>
         {toggle && (
-        <div className={`fixed inset-y-0 z-10 flex w-80 ${toggle ? 'transform translate-x-0' : 'transform -translate-x-full'}`}>        
+        <div className={`fixed inset-y-0 z-10 flex w-80 duration-700 ease-in-out`}>        
           <svg
-          className="absolute inset-0 w-full h-full text-white"
+          className="absolute inset-0 w-full h-full text-white duration-700 ease-in-out"
           style={{ filter: 'drop-shadow(10px 0 10px #00000030)' }}
           preserveAspectRatio="none"
           viewBox="0 0 309 800"
