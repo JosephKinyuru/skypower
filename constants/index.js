@@ -197,3 +197,36 @@ export const ServiceData = [
     backgroundImage: "https://images.unsplash.com/photo-1435783459217-ee7fe5414abe?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
+
+export const Clients = [
+  {
+    id:1,
+    client: "Safaricom",
+    link: "https://www.safaricom.co.ke/",
+    logo:"/assets/Safaricom.svg",
+  },
+  {
+    id:2,
+    client: "ABB Group",
+    link: "https://global.abb/group/en",
+    logo:"/assets/ABB-group.svg",
+  },
+  {
+    id:3,
+    client: "Schneider Electric",
+    link: "https://www.se.com/ke/en/",
+    logo:"/assets/Schneider-Electric.svg",
+  },
+  {
+    id:4,
+    client: "ICT Authority",
+    link: "https://global.abb/group/en",
+    logo:"/assets/ICT-Authority.jpg",
+  },
+  {
+    id:5,
+    client: "Kenya Power",
+    link: "https://www.safaricom.co.ke/",
+    logo:"/assets/kenyapower.png",
+  },
+]
