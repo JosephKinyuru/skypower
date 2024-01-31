@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
+        <div className='max-w-full'>
           {children}
+        </div>
         <Footer/>
       </body>
     </html>
