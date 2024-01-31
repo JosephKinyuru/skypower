@@ -23,7 +23,7 @@ export default function RootLayout({
         <div className="content-container">
           {children}
         </div>
-        {/* <Footer/> */}
+        <Footer/>
       </body>
     </html>
   )

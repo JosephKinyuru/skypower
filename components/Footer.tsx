@@ -26,7 +26,7 @@ const Footer = () => {
   const currentYear = getCurrentYear();
 
   return (
-    <footer className={`flex justify-center items-center sm:py-16 py-6 flex-col bg-slate-900 font-sans text-white`}>
+    <footer className={`flex flex-col justify-center items-center sm:py-16 py-6 bg-slate-900 font-sans text-white overflow-x-hidden`}>
       <div className={`flex justify-center items-start md:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 flex flex-col justify-start mb-8 md:mr-8 md:mb-0'>
           <Image
