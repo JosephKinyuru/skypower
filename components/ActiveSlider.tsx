@@ -1,6 +1,9 @@
 "use client"
 
 import React, { Suspense } from 'react'
+import Link from 'next/link';
+import Image from 'next/image';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css'
@@ -9,11 +12,7 @@ import 'swiper/css/free-mode'
 
 import {Pagination, FreeMode, Autoplay } from 'swiper/modules'
 import { RxArrowTopRight } from 'react-icons/rx';
-import { ServiceData } from '@/constants';
-import { Products } from '@/constants';
-import { Clients } from '@/constants';
-import Link from 'next/link';
-import Image from 'next/image';
+import { Products, Clients } from '@/constants';
 
 const ActiveSlider = () => {
 
@@ -42,10 +41,10 @@ const ActiveSlider = () => {
         }}
         modules={[FreeMode, Pagination, Autoplay]}
         autoplay={{
-            delay:3500
+            delay:4500
         }}
         loop={true}
-        className='max-w-[90%] lg:max-w-[80%]'
+        className='max-w-[50%] lg:max-w-[50%]'
         >
         {Products.map((item) => (
             <SwiperSlide key={item.title}>
@@ -90,7 +89,7 @@ const ActiveSlider = () => {
         }}
         modules={[FreeMode, Pagination, Autoplay]}
         autoplay={{
-            delay:3500
+            delay:4500
         }}
         loop={true}
         className='max-w-[90%] lg:max-w-[80%]'
