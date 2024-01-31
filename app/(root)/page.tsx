@@ -9,9 +9,7 @@ export default function Home() {
       <main>
         <div className='flex items-center justify-center bg-cover bg-center bg-no-repeat bg-[url(https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] w-full h-screen'>
           <div className="text-slate-50 text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Delivering Innovative</h1>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Engineering Solutions that Secure a</h1>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-amber-400">Bright Future for Africa</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Delivering Innovative Engineering Solutions that Secure <span className='text-yellow-500'>a bright future for Africa</span></h1>
             <div className='flex flex-row justify-center space-x-10 pt-[4rem]'>
               <Link href={'/products'}>
                 <button className='bg-amber-400 px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-5 text-base md:text-lg lg:text-2xl tracking-widest border border-amber-300 rounded-xl hover:bg-transparent hover:text-amber-300 hover:border-amber-300 transition duration-300 ease-in-out text-white font-bold'>Our Products</button>              

@@ -30,14 +30,14 @@ const Footer = () => {
       <div className={`flex justify-center items-start md:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 flex flex-col justify-start mb-8 md:mr-8 md:mb-0'>
           <Image
-            src='skypowerlogo.svg'
+            src='skypower-black&white.svg'
             alt='logo'
             width={266}
             height={72}
             className='object-contain'
           />
           <p className={`text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[310px] `}>SKYPOWER LIMITED</p>
-          <p className={`text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[340px] `}>Ⓒ {currentYear} Skypower All rights reserved</p>
+          <p className={`text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[340px] `}>Ⓒ{currentYear} Skypower All rights reserved</p>
           <p className={`text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]`}>Designed by Skypower Limited</p>
         </div>
         <div className='flex-1 flex flex-col justify-start mb-8 md:mr-8 md:mb-0'>
