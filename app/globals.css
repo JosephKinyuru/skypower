@@ -25,6 +25,10 @@ html {
   border-radius: 10px;
 }
 
+.content-container {
+  margin: 0 auto;
+}
+
 /* body {
   margin: 0;
   width: 100%;
