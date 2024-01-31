@@ -44,7 +44,7 @@ const ActiveSlider = () => {
             delay:4500
         }}
         loop={true}
-        className='max-w-[50%] lg:max-w-[50%]'
+        className='max-w-[90%] lg:max-w-[80%]'
         >
         {Products.map((item) => (
             <SwiperSlide key={item.title}>
