@@ -1,9 +1,9 @@
 import robot from "./robot.png";
-import discount from "./Discount.svg";
-import turbines from "./windturbine.png"
+import robot2 from "./robot2.png";
+import robot3 from "./robot3.png"
 
 export {
-  turbines,
   robot,
-  discount,
+  robot2,
+  robot3,
 };
