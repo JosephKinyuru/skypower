@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`max-w-full overflow-x-hidden ${inter.className}`}>
         <Navbar/>
         <div className="content-container">
           {children}
