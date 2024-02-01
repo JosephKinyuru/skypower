@@ -65,7 +65,7 @@ const ActiveSlider = () => {
         ))}
         </Swiper>
     </div>
-    <div className='inset-x-0 bottom-0 h-12 bg-gradient-to-t from-teal-50 to-transparent'></div>
+    <div className='inset-x-0 bottom-0 h-12 bg-gradient-to-t from-slate-50 to-transparent'></div>
     <div className='flex items-center justify-center flex-col h-screen bg-slate-50'>
         <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 mt-0 font-sans text-center'>Our Clients</h1>
         <p className='text-xs sm:text-sm md:text-lg lg:text-xl text-gray-600 mt-2 mb-10 sm:mt-4 lg:mt-6 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto text-center'>

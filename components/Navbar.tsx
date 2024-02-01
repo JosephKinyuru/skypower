@@ -44,7 +44,7 @@ const Navbar = () => {
 
               return (
                   <React.Fragment key={index}>
-                  {index > 0 && <span className="text-yellow-custom"> | </span>}
+                  {index > 0 && <span> | </span>}
                   {link.dropdown ? (
                     <Link
                     href={link.route}
