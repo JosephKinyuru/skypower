@@ -26,8 +26,8 @@ const Footer = () => {
   const currentYear = getCurrentYear();
 
   return (
-    <footer className={`flex flex-col justify-center items-center sm:py-16 py-6 bg-slate-900 font-sans text-white overflow-x-hidden`}>
-      <div className={`flex justify-center items-start md:flex-row flex-col mb-8 w-full`}>
+    <footer className='flex flex-col justify-center items-center sm:py-16 py-6 bg-slate-900 font-sans text-white overflow-x-hidden max-w-full'>
+      <div className='flex justify-center items-start md:flex-row flex-col mb-8 w-full'>
         <div className='flex-1 flex flex-col justify-start mb-8 md:mr-8 md:mb-0'>
           <Image
             src='skypower-black&white.svg'
@@ -36,20 +36,20 @@ const Footer = () => {
             height={72}
             className='object-contain'
           />
-          <p className={`text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[310px] `}>SKYPOWER LIMITED</p>
-          <p className={`text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[340px] `}>Ⓒ{currentYear} Skypower All rights reserved</p>
-          <p className={`text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]`}>Designed by Skypower Limited</p>
+          <p className='text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[310px]]'>SKYPOWER LIMITED</p>
+          <p className='text-[18px] leading-[30.8px] mt-4 pl-4 max-w-[340px]]'>Ⓒ{currentYear} Skypower All rights reserved</p>
+          <p className='text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]'>Designed by Skypower Limited</p>
         </div>
         <div className='flex-1 flex flex-col justify-start mb-8 md:mr-8 md:mb-0'>
-          <p className={`text-[18px] leading-[30.8px] mt-8 pl-4 max-w-[320px]`}>Elgon Court, Ralph Branche Rd, C6</p>
-          <p className={`text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[320px]`}>P.O.Box 4/85 00100 Nairobi</p>
-          <p className={`text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]`}>info@skypower.co.ke</p>
-          <p className={`text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[320px]`}>+44 987 065 908</p>
-          <p className={`text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]`}>www.skypower.co.ke</p>
+          <p className='text-[18px] leading-[30.8px] mt-8 pl-4 max-w-[320px]'>Elgon Court, Ralph Branche Rd, C6</p>
+          <p className='text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[320px]'>P.O.Box 4/85 00100 Nairobi</p>
+          <p className='text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]'>info@skypower.co.ke</p>
+          <p className='text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[320px]'>+44 987 065 908</p>
+          <p className='text-[18px] leading-[30.8px] mt-1 pl-4 max-w-[310px]'>www.skypower.co.ke</p>
         </div>
         <div className="flex-[1.5] grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-4">
         {footerLinks.map((footerlink) => (
-          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <div key={footerlink.title} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
             <ul className="list-none mt-4">
               {footerlink.links.map((link, index) => (
                 <li
