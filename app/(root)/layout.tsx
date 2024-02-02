@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`max-w-full overflow-x-hidden ${inter.className}`}>
         <Navbar/>
-        <div className="content-container">
+        <div className="max-w-full overflow-x-hidden">
           {children}
         </div>
         <Footer/>
