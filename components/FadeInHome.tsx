@@ -9,7 +9,7 @@ import { robot, robot2, robot3 } from '@/assets';
 const FadeInHome = () => {
   return (
     <>
-        <Fade direction="left" delay={300} triggerOnce={true}>
+        <Fade direction="left" delay={250} triggerOnce={true}>
         <div className='flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6'>
             <div className="flex flex-row justify-between items-center w-full">
             <h1 className="flex-1 font-poppins font-semibold sm:text-[72px] text-[52px] text-black sm:leading-[100.8px] leading-[75px] sm:mt-9">
