@@ -23,7 +23,7 @@ const Navbar = () => {
   
   return (
     <>
-      <nav className='sticky w-full mx-auto h-18 shadow-xl bg-white top-0 z-30 flex items-center justify-between px-6 py-3'>
+      <nav className='sticky w-full mx-auto h-[4.5rem] shadow-xl bg-zinc-50 top-0 z-30 flex items-center justify-between px-6 py-3'>
         <div className="flex items-center">
           <p className="text-light-1 mr-4">
           <Image
