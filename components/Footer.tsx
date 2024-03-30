@@ -54,12 +54,12 @@ const Footer = () => {
               {footerlink.links.map((link, index) => (
                 <li
                   key={link.name}
-                  className={`text-[16px] leading-[24px] text-white cursor-pointer transition-all duration-300 ease-in-out group-hover:pl-3 hover:text-secondary hover:pl-2 ${
+                  className={`text-[16px] leading-[24px] text-white cursor-pointer transition-all duration-300 ease-in-out group-hover:pl-3 hover:text-secondary hover:pl-2 hover:text-yellow-custom ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
                   {footerlink.title === "socials" ? (
-                    <Link href={link.link}>{getSocialIcon(link.name)}</Link>
+                    <Link href={link.link} className='hover:text-yellow-custom'>{getSocialIcon(link.name)}</Link>
                   ) : (
                     <Link href={link.link}>{link.name}</Link>
                   )}
