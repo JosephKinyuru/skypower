@@ -27,7 +27,7 @@ const Menu = () => {
 
 
   return (
-    <div className='sm:hidden'>
+    <div className='2lg:hidden'>
 
         <button 
             className={styles.button}
