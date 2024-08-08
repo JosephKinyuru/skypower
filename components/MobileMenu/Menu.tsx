@@ -71,7 +71,7 @@ const Menu = () => {
                               <Link
                                 href={item.route}
                                 onClick={toggleOpen}
-                                className={`no-underline text-blue-950 font-sans text-3xl pb-8 ${isActive && "text-yellow-400"}`}
+                                className={`no-underline text-blue-950 font-sans text-3xl pb-6 ${isActive && "text-yellow-400"}`}
                               >
                                 {item.label}
                               </Link>
