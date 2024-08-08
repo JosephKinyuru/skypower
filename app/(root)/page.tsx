@@ -11,7 +11,7 @@ export default function Home() {
       <main>
         <section className="bg-gradient-to-b from-white via-sky-200 to-sky-800 flex justify-center items-start min-h-screen w-full">
           <div className="xl:max-w-[1280px] w-full">
-            <div className='flex md:flex-row flex-col sm:py-16'>
+            <div className='flex lg:flex-row flex-col sm:py-16'>
               <div className='flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6'>
 
                 <div className="flex justify-between items-center w-full max-w-[470px]">
