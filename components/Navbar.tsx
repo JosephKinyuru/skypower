@@ -40,7 +40,7 @@ const Navbar = () => {
 
         <Menu/>
 
-        <div className="items-center hidden lg:flex">
+        <div className="items-center hidden 2lg:flex">
               {navbarLinks.map((link, index) => {
               const isActive =
                   (pathname.includes(link.route) && link.route.length > 1) ||
@@ -83,7 +83,7 @@ const Navbar = () => {
                                     >
                                         <div className="flex flex-col space-y-4 text-sm">
                                             {link.dropdown.map((item, index) => (
-                                                <Link href={`${item.route}`} key={index} className="text-neutral-700 hover:text-black ">
+                                                <Link href={item.route} key={index} className="text-neutral-700 hover:text-black ">
                                                     {item.label}
                                                 </Link>
                                             ))}
