@@ -14,22 +14,41 @@ export const navbarLinks = [
     {
       route: "/power",
       label: "Power",
-      dropdown: ["Powerline Construction", "Substation construction", "Supply of Powerline Accessories", "Supply of Tools & Equipment"],
+      dropdown: [
+        { route: "/power/#powerline-construction", label: "Powerline Construction" },
+        { route: "/power/#substation-construction", label: "Substation Construction" },
+        { route: "/power/#supply-of-powerline-accessories", label: "Supply of Powerline Accessories" },
+        { route: "/power/#supply-of-tools-equipment", label: "Supply of Tools & Equipment" },
+      ],
     },
     {
       route: "/telecoms",
       label: "Telecoms",
-      dropdown: ["Tower Construction", "Fibre Works", "Structured Cabling"],
+      dropdown: [
+        { route: "/telecoms/#tower-construction", label: "Tower Construction" },
+        { route: "/telecoms/#fibre-works", label: "Fibre Works" },
+        { route: "/telecoms/#structured-cabling", label: "Structured Cabling" },
+      ],
     },
     {
       route: "/renewable-energy",
       label: "Renewable Energy",
-      dropdown: ["Minigrids", "Solar Water Pumping", "E-mobility", "Cooking Stoves"],
+      dropdown: [
+        { route: "/renewable-energy/#minigrids", label: "Minigrids" },
+        { route: "/renewable-energy/#solar-water-pumping", label: "Solar Water Pumping" },
+        { route: "/renewable-energy/#e-mobility", label: "E-mobility" },
+        { route: "/renewable-energy/#cooking-stoves", label: "Cooking Stoves" },
+      ],
     },
     {
       route: "/consultancy",
       label: "Consultancy",
-      dropdown: ["Powerline & Substation Design", "Solar System Design", "Safety", "Radio Transmission Planing"],
+      dropdown: [
+        { route: "/consultancy/#powerline-substation-design", label: "Powerline & Substation Design" },
+        { route: "/consultancy/#solar-system-design", label: "Solar System Design" },
+        { route: "/consultancy/#safety", label: "Safety" },
+        { route: "/consultancy/#radio-transmission-planning", label: "Radio Transmission Planning" },
+      ],
     },
     {
       route: "/contacts",
