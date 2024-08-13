@@ -48,7 +48,7 @@ const Menu = () => {
               className="block h-screen bg-sky-50 absolute right-0 top-0 text-white w-[100vw]"
             >
                 <div className="box-border h-full p-10 flex flex-col justify-between">
-                  <div className="flex flex-col text-5xl gap-3 mt-10">
+                  <div className="flex flex-col text-5xl gap-2 mt-10">
                     <div className="text-gray-600 border-b border-gray-600 uppercase text-xs mb-10">
                       <p>Navigation</p>
                     </div>
